@@ -45,7 +45,7 @@ def compute_score(seq, strand, models):
         # iterate through 3 models that trained specific for the tissue
         for model in models[3*j:3*j+3]:
             with torch.no_grad():
-                # extract predicted splice site strength for the specific tissue 
+                # extract predicted splice site strength for the specific tissue
                 seq_scores = model(seq)[0][[1,4,7,10][j],:].cpu().numpy()
                 # as the Reverse complement of - strand is used for prediction, it needs to be fliped back to match original seq
                 if strand == '-':
