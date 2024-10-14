@@ -1,6 +1,6 @@
 import argparse
 from pkg_resources import resource_filename
-from pangolin.model import *
+from model import *
 import vcf
 import gffutils
 import pandas as pd
