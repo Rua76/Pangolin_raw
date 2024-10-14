@@ -5,6 +5,6 @@ A sample code for getting raw Pangolin prediction from sequence
 
 Assume you have pulled the published Pangolin repository https://github.com/tkzeng/Pangolin, this snipplet is intended to work in the */pangolin* folder 
 
-Assume you have a list of pre-mRNA sequences as fasta seqs that you prepared by yourself. Note that it is recommended to have 5,000 bp flanking both side of the target sequence, but it is not necessary for Pangolin to do prediction. It can predict on sequence with arbitrary length. 
+Assume you have a list of pre-mRNA sequences as fasta seqs that you prepared by yourself. Note that it is required to have 5,000 bp flanking both side of the target sequence. The sequence of interest can have arbitrary length
 
 The number of models loaded in this sample code is the same as the published Pangolin, 3 models for each of the 4 tissues. You can always edit to load more/less models.
